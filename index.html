@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página com Cabeçalho e Rodapé</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'bree-serif';
+        }
+
+        .cabecalho {
+            background-color: #006C44;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: 430px;
+            position: relative;
+        }
+
+        .cabecalho img {
+            width: 125px;
+        }
+
+        .conteudo {
+            padding: 0px;
+            min-height: 80vh;
+            background-color: #F4F4F4;
+        }
+
+        .rodape {
+            background-color: #006C44;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        .dados {
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dados img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .dados .nome {
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .dados .cargo {
+            font-size: 22px;
+        }
+
+        .links {
+            text-align: center;
+        }
+
+        .links a {
+            margin: 0 15px;
+            display: inline-block;
+            transition: transform 0.4s;
+        }
+
+        .links a:hover {
+            transform: scale(0.8);
+        }
+
+        .links img {
+            max-width: 45px;
+            vertical-align: middle;
+        }
+
+        .endereco {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .endereco strong {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .endereco p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .redes-sociais {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 9px;
+            padding: 20px 0;
+            background-color: #f9f9f9;
+            color: #686868;
+        }
+
+        .redes-sociais span {
+            margin: 0 0px;
+        }
+
+        .rota-div {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .rota-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #006C44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: "bree-serif";
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .rota-btn img {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .rota-btn:hover {
+            background-color: #00502f;
+        }
+
+        .links .icon-text {
+            display: block;
+            font-size: 12px;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        .icon-group {
+            display: inline-block;
+            margin: 0 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div><img src="./logo-sekita.webp" alt="Logomarca da Empresa"></div>
+        <div class="dados">
+            <img src="./foto.png" alt="Imagem de Vander Massochini">
+            <div class="nome">Vander Massochini</div>
+            <div class="cargo">Diretor Administrativo</div>
+        </div>
+        <div class="links">
+            <div class="icon-group">
+                <a href="tel:+5534999055051" title="Ligar"><img src="./ligar.png" alt="Ícone Ligar"></a>
+                <span class="icon-text" style="color: #F4F4F4;">Ligar</span>
+            </div>
+
+            <div class="icon-group">
+                <a href="mailto:vmassochini@sekita.com.br" title="Email"><img src="./email.png" alt="Ícone Email"></a>
+                <span class="icon-text" style="color: #F4F4F4;">E-mail</span>
+            </div>
+
+            <div class="icon-group">
+                <a href="https://wa.me/5534999055051" target="_blank" title="WhatsApp"><img src="./whatsapp.png" alt="Ícone WhatsApp"></a>
+                <span class="icon-text" style="color: #F4F4F4;">WhatsApp</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <div class="redes-sociais">
+            <span>----------------------------------------------------</span> REDES SOCIAIS
+            <span>----------------------------------------------------</span>
+        </div>
+
+        <div class="links">
+            <div class="icon-group">
+                <a href="https://www.facebook.com/sekitaagro" title="Facebook">
+                    <img src="./facebook.png" alt="Ícone Facebook">
+                </a>
+                <span class="icon-text">Facebook</span>
+            </div>
+
+            <div class="icon-group">
+                <a href="https://br.linkedin.com/company/sekitaagronegcios" title="Linkedin">
+                    <img src="./linkedin.png" alt="Ícone Linkedin">
+                </a>
+                <span class="icon-text">Linkedin</span>
+            </div>
+
+            <div class="icon-group">
+                <a href="https://www.instagram.com/sekitaagro/" target="_blank" title="Instagram">
+                    <img src="./instagram.png" alt="Ícone Instagram">
+                </a>
+                <span class="icon-text">Instagram</span>
+            </div>
+        </div>
+
+        <div class="endereco" style="background-color: #F4F4F4;">
+            <strong>Endereço</strong>
+            <p>
+                Br 354, km 324<br>
+                Lote 46A Padap Zonal Rural<br>
+                Rio Paranaíba - MG<br>
+                38810-000
+            </p>
+        </div>
+        <div class="endereco" style="background-color: #F4F4F4;">
+            <strong>Localização</strong>
+            <p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15059.816846497959!2d-46.1519126!3d-19.3277931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b21c3d45672d89%3A0x474f14f7936c9fa4!2sSekita%20Agroneg%C3%B3cios!5e0!3m2!1spt-BR!2sbr!4v1696434807207!5m2!1spt-BR!2sbr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+            <div class="rota-div">
+                <a href="https://maps.google.com/maps/dir//Sekita+Agroneg%C3%B3cios+Br+354,+km+324,+Lote+46A+Padap+Zonal+Rural+Rio+Parana%C3%ADba+-+MG+38810-000/@-19.3277931,-46.1519126,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x94b21c3d45672d89:0x474f14f7936c9fa4"
+                    class="rota-btn">
+                    <img src="./carro.png" alt="Ícone Rota"> OBTER ROTA
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rodape">
+        Rodapé da Página
+    </div>
+</body>
+</html>
